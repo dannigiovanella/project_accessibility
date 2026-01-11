@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--LÄnkade CSS-filer-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="mobile.css">
+    <!--LÄnkad JS-fil (För hamburgermeny i mobile)-->
+    <script src="navbar.js" defer></script>
+
+    <!--Google font. Inter-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <title>Tillgänglighetsrapport</title>
+</head>
+
+<body>
+    <!-- Header med logotyp, sökfunktion och navigationsmeny-->
+    <header>
+
+        <!--Top på header med logotyp, sökfunktion, lyssna och språk-->
+        <div class="headertop">
+
+            <!--Logotyp med länk till index-->
+            <a href="index.html">
+                <img src="bilder/logo.png" alt="Logotyp" class="logotyp">
+            </a>
+
+            <!--Sökfunktion, lyssnafunktion och språkfunktion-->
+            <div class="headertopdetail">
+                <!--Sökfunktion med knapp (Ikon och knapp)-->
+                <div class="search">
+                    <input type="search" placeholder="Vad söker du..." class="searchinput">
+                    <!--Ikon för sök-->
+                    <img src="icons/search.svg" alt="">
+                </div>
+
+                <!--Sökfunktion (ikon för mobile och tablet)-->
+                <div class="search2">
+                    <img src="icons/search3.svg" alt="">
+                    <p>Sök</p>
+                </div>
+
+                <!--Lyssnafunktion (ikon)-->
+                <div class="headphones">
+                    <img src="icons/headphones.svg" alt="">
+                    <p>Lyssna</p>
+                </div>
+
+                <!--Språkfunktion (ikon)-->
+                <div class="sprak">
+                    <img src="bilder/flag.png" alt="" class="flag">
+                    <p>Språk</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!--Hamburger-ikon till meny i mobile. HTML-ikon för lättare stylng-->
+        <button class="hamburger">&#9776;</button>
+        <!--Bannerbild-->
+        <div class="bannerbild">
+            <p>FÄRDTJÄNST</p>
+        </div>
+
+        <!--Navigationsmeny. Huvudmeny för webbplats-->
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="mypages.html">MINA SIDOR</a>
+                        <ul>
+                            <li><a href="booking_firstpage.html">Boka resa</a></li>
+                            <li><a href="mytravel.html">Mina resor</a></li>
+                            <li><a href="mydetails.html">Mina uppgifter</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="booking_firstpage.html">BOKA</a>
+                        <ul>
+                            <li><a href="booking_solotravel.html">Enskild resa</a></li>
+                            <li><a href="booking_continuoustravel.html">Återkommande resor</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="information.html">INFORMATION</a>
+                        <ul>
+                            <li><a href="information_how.html">Regler och villkor</a></li>
+                            <li><a href="information_about.html">Hur du bokar</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">KONTAKT</a></li>
+
+                </ul>
+                <!--Knapp för att logga ut. Länkad till index-->
+                <a class="logout" href="index.html"><img src="icons/logout.png" alt="">Logga ut</a>
+            </nav>
+        </div>
+
+    </header>
+    <nav class="breadcrumbs">
+        <ol>
+            <li class="currentpage">Tillgänglighetsredogörelse</li>
+        </ol>
+    </nav>
+
+    <main class="wrapper1">
+
+        <!--Tillgänglightesredogörelse. Uppdelat i rubriker-->
+        <section class="wrapper2">
+            <h1>Tillgängllighetsredogörelse</h1>
+            
+            <h2>Hur vi uppfyller lagen om tillgänglighet för vår webbplats</h2>
+            <p>Målet med webbplatsen är att den ska vara tillgänglig för så många som möjligt.</p>
+            <p>Denna tillgänglighetsredogörelse beskriver hur vi lever upp till de lagkrav som finns, för oss kända brister och hur vi kan nås för att rapportera ytterligare brister eller andra synpunkter gällande vårt tillgänglighetsarbete.</p>
+
+            <h3>Hur tillgänglig är webbplatsen?</h3>
+            <p>Vi arbetar ständigt med att förbättra tillgängligheten på vår webbplats, men är medvetna om att det finns
+                mindre brister i detta. Dessa brister kan du läsa mer om i avsnittet ”Innehåll som inte är
+                tillgängligt”.</p>
+
+            <h3>Vad kan du göra om du inte kan använda delar av webbplatsen?</h3>
+            <p>Om innehåll du behöver komma åt innehåll på vår webbplats som är undantag för lagkrav och som inte är
+                tillgängligt för dig så kan du kontakta oss via kontaktformuläret eller nå oss via telefon och mejl som
+                du hittar här: <a href="contact.html">Kontaktuppgifter</a> </p>
+
+            <h3>Rapportera brister i webbplatsens tillgänglighet</h3>
+            <p>Upplever du brister i tillgängligheten är vi tacksamma över att få ta del av dina synpunkter på detta för att kunna jobba vidare med förbättringsarbetet. Har du synpunkter är du välkommen att lämna dessa via kontaktforumläret</p>
+
+            <h3>Tillsyn</h3>
+            <p>Ansvaret för tillsyn av lagen om tillgänglighet ligger hos myndigheten för digital förvaltning (DIGG). Dit kan du vända dig om du upplever problem med hur dina synpunkter hanteras av oss.<br><a href="https://www.digg.se/tdosanmalan">Anmäl bristande tillgänglighet till DIGG</a></p>
+
+            <h3>Teknisk information om webbplatsens tillgänglighet</h3>
+            <p>Den här webbplatsen är delvis förenlig med lagen om tillgänglighet till digital offentlig service. Detta bygger på de brister som påtalas i följande rubrik.</p>
+            <h3>Innehåll som inte är tillgängligt</h3>
+            <h4>Bristande förenlighet med lagkraven</h4>
+            <ul class="tillganglig">
+
+                <li>
+                    <p><strong>Felmeddelande vid inmatning av formulärfält</strong></p>
+                    <p>Felmeddelande som ska visas för användaren vid fel inamatning av formulärsfältetn är inte korrekt
+                        programmerade enligt lagkraven. Detta löses i dagsläget med att tydligt visa för användaren
+                        vilka fält som måste vara ifyllda, samt hur detta ska fyllas i med hjälp av förklarande text.
+                    </p>
+                    <p>Brister i tillgängligheten arbetas ständigt med och förväntas vara lösta senast 20-01-26.</p>
+                </li>
+            </ul>
+
+            <h3>Hur vi testat webbplatsen</h3>
+            <p>Granskning av webbplatsens tillgänglighet har testats internt och har bedömts mot de lagkrav och riktlinjer som finns kring webbplatsers tillgänglighet.</p>
+            <p><em>Webbplatsen publicerades den 11-01-07</em></p>
+            <p><em>Redogörelsen uppdaterades senast den 01-07-11</em></p>
+        </section>
+
+        <!--Kontaktformulär för synpunkter-->
+        <form class="contactform2" autocomplete="on">
+            <fieldset>
+                <legend>Kontakta oss för synpunkter</legend>
+
+                <div class="formgroup">
+                    <label for="name">Namn (frivilligt)</label>
+                    <input type="text" id="name" name="name" placeholder="För och efternamn">
+                </div>
+
+
+                <div class="formgroup">
+                    <label for="email">E-post (frivilligt)</label>
+                    <input type="email" id="email" name="email" placeholder="exempel@epost.se">
+                </div>
+
+
+                <div class="formgroup">
+                    <label for="message">Vad har du för synpunker</label>
+                    <textarea id="message" name="message" placeholder="Skriv ditt meddelande här..."
+                        required></textarea>
+                </div>
+
+
+                <div class="formbuttons">
+                    <button type="submit" class="smallbutton"><img src="icons/send.png" alt=""> Skicka</button>
+                </div>
+
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <!--sektion för kommunens adress-->
+        <section>
+            <h3>Sotenäs kommun</h3>
+            <p>Besöksadress:</p>
+
+            <p>Parkgatan 46<br>
+                456 80 Kungshamn</p>
+
+            <p>Webbadress:</p>
+            <a href="https://www.sotenas.se/">sotenäs.se</a>
+        </section>
+
+        <!--Sektion för kontakt-->
+        <section>
+            <h3>Kontakt</h3>
+            <a href="contact.html">Kontakta oss</a>
+            <p>Telefon: 0523-66 40 00</p>
+            <a href="mailto:info@sotenas.se">
+                Skicka e-post
+            </a>
+
+        </section>
+
+        <!--Sektion för tillgänglighet och personuppgift-säkerhet-->
+        <section>
+            <h3>Tillgänglighet och säkerhet</h3>
+            <a href="tillgängllighetsrapport.html">Tillgänglighetsredogörelse</a>
+            <a href="gdpr.html">GDPR</a>
+        </section>
+
+    </footer>
+</body>
+
+</html>

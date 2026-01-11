@@ -1,0 +1,722 @@
+/*DESKTOP-LÄGE. 1600px maxbredd*/
+
+/*Nollställer padding och marginal*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Focusmarkering. syns bara vid tab*/
+:focus-visible {
+    outline: 3px solid red;
+    outline-offset: 2px;
+}
+
+/*Bakgrundsfärg av sidan vid skärmstorlek större än 1600px*/
+html {
+    background-color: #021525;
+}
+
+/*Generella inställningar och styling för text, sidbredd och bakgrund. (gäller alla sidor)*/
+body {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: rgb(248, 247, 244);
+    line-height: 1.5;
+    color: rgb(12, 12, 12);
+    font-size: 1rem;
+    font-family: 'Inter', Segoe UI, Geneva, Verdana, sans-serif;
+}
+
+
+/*Styling för rubriker*/
+h1 {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+h2 {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+/*Yttermarginaler för allt innehåll i main*/
+main {
+    margin-left: 5rem;
+    margin-top: 3rem;
+}
+
+/*En blåövre kant i header*/
+header {
+    border-top: 4px solid #01213d;
+}
+
+/*///// FOOTER  //////*/
+/*Styling och position för hela footer*/
+footer {
+    background-color: #003A6C;
+    color: rgb(248, 247, 244);
+    margin-top: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*Positionering för sections i footer*/
+footer section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+/*Syling och hover för länkar i footer*/
+footer a {
+    color: rgb(248, 247, 244);
+    text-decoration: none;
+}
+
+/*Hhover över länkar i footer*/
+footer a:hover {
+    color: #D96D00;
+}
+
+/*///////  INDEX-SIDA (specialare)  ////////*/
+
+/*Styling för logo på index*/
+.logotypindex {
+    width: 50px;
+    height: auto;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+/*Banner för index*/
+.indexbanner {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+}
+
+/*Bild för banner på index*/
+.indexbanner img {
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    z-index: 1;
+    border-bottom: solid #D96D00 6px;
+}
+
+/*Positionering för "FÄRDTJÄNST" över bannerbild*/
+.indexbanner .bannerbild {
+    position: absolute;
+    z-index: 2;
+    bottom: 1rem;
+}
+
+
+/*////// Header med meny, logga ut och liten bannerbild ////////*/
+
+/*LOGOTYP*/
+.logotyp {
+    width: 50px;
+    height: auto;
+}
+
+/*Flaggan för språk i headern*/
+.flag {
+    width: 23px;
+}
+
+/*Position för toppen av header. Logotyp och sök*/
+.headertop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+/*Styling och positon för toppen av header. Sökfält och anpassning*/
+.headertopdetail {
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+    color: #003A6C;
+}
+
+/*Ikon för sökning*/
+.search {
+    display: flex;
+    height: 2rem;
+    min-width: 5rem;
+    margin-left: 1rem;
+}
+
+/*Ikon för att söka. Dold i desktop. Syns i mobile*/
+.search2 {
+    display: none;
+}
+
+/*Storlek och styling för inputfäl för sökning*/
+.searchinput {
+    border-radius: 5px;
+    width: 10rem;
+    padding: 1rem;
+    margin-right: 0.5rem;
+
+}
+
+/*Styling för ikon av att lyssna i header*/
+.headphones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Styling för flaggan under val av språk i header*/
+.sprak {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Bannern "FÄRDTJÄNST" Styling och position*/
+.bannerbild {
+    color: rgb(248, 247, 244);
+    background-color: #003A6C;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 5rem;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 50%;
+}
+
+/*/// NAVIGATONSMENY /////*/
+
+/*Positonering för hela nav. meny+logga ut*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-left: 3rem;
+}
+
+/*Positionering för nvugationsmenyn med länkar*/
+.navbar {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1.5rem;
+    padding-left: 0;
+    margin: 0;
+    align-items: stretch;
+    border-bottom: 6px solid #D96D00;
+}
+
+
+/* Hamburgerikon (för meny) gömd på desktop. Styling och position*/
+.hamburger {
+    display: none;
+    font-size: 3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #003A6C;
+    z-index: 10;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+/*Fokusmarkering över hamburgeikon*/
+.hamburger:focus-visible {
+    outline: 3px solid red;
+    outline-offset: 2px;
+}
+
+
+/*Styling och position för huvudmeny*/
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+}
+
+/*Styling för länkar i huvudmeny*/
+nav a {
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    color: rgb(12, 12, 12);
+    font-weight: 600;
+}
+
+/*Knappen för logga ut. Position och styleing*/
+.logout {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    border-radius: 10px;
+    background-color: #003A6C;
+    color: rgb(248, 247, 244);
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+
+/*Positionering för länkarna i huvudmeny*/
+nav ul li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+/* Dropdown. Positionering. (Dold utan hover) */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+}
+
+/*animation. mjukare hovring*/
+nav ul li a {
+    transition: background-color 0.3s ease;
+}
+
+/*Hur menyrader ser ut när man hovrar över länkarna*/
+nav ul li a:hover {
+    background-color: #D96D00;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* Visa dropdown vid hover */
+nav ul li:hover ul {
+    display: block;
+    background-color: #D96D00;
+}
+
+/*Hur dropdown ser ut när man hovrar över den*/
+nav ul li ul li a:hover {
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    background-color: #ee9c4b;
+}
+
+/*Hur en sida är markerad när den är aktiv*/
+nav a.active {
+    background-color: #D96D00;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/*////// SLUT PÅ NAVBAR ////*/
+
+/*/// NAVIGERING-BREADCRUMBS ///*/
+.breadcrumbs {
+    display: flex;
+    font-size: 0.8rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.breadcrumbs ol {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumbs li {
+    color: #414040;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: #003A6C;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+
+/*//// WRAPPERS - POSITINERING AV INNEHÅLL ////*/
+
+/*Wrapper för alla sidor utan bilder (Hela sidan)*/
+.wrapper1 {
+    display: flex;
+    flex-direction: row;
+    gap: 7rem;
+    justify-content: space-between;
+    margin-right: 5rem;
+}
+
+/*Wrapper för sektioner (text). Positionering och bredd*/
+.wrapper2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 60ch;
+    min-width: 40ch;
+}
+
+.wrapper2 p {
+    margin-bottom: 1rem;
+}
+
+/*Wrapper för sidor med stora bilder (hela sidan)*/
+.wrapper3 {
+    display: flex;
+    flex-direction: row;
+    gap: 7rem;
+    justify-content: space-between;
+}
+
+
+/*///// KNAPPAR ////////*/
+
+/*Wrapper för stora knappar*/
+.wrapperbigbutton {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 3rem;
+    width: 90%;
+}
+
+/*Wrapper för små knappar. tex i formulär*/
+.buttonwrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+/*Stil för stora knappar. navigering*/
+.bigbutton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    width: 25rem;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: #003A6C;
+    text-decoration: none;
+    color: rgb(248, 247, 244);
+    text-align: left;
+    padding-top: 0.6rem;
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+/*Stil för små knappar i ex formulär*/
+.smallbutton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    min-width: 10rem;
+    width: 50%;
+    min-width: 178px;
+    min-height: 2.5rem;
+    border-radius: 10px;
+    background-color: #003A6C;
+    text-decoration: none;
+    color: rgb(248, 247, 244);
+    text-align: center;
+    padding-top: 0.6rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+/*Knapp för negativa val som avbokning*/
+.smallbutton2 {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    min-width: 10rem;
+    width: 50%;
+    min-height: 2.5rem;
+    border-radius: 10px;
+    background-color: #D96D00;
+    text-decoration: none;
+    color: rgb(248, 247, 244);
+    text-align: center;
+    padding-top: 0.6rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+/*//// BILDER /////*/
+
+/*Storlek och positioneroing för stora bilder på sidan*/
+.sideimage {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 40px;
+}
+
+/*Döjer bilden som den visas i tablet och mobile*/
+.sideimagemobile {
+    display: none;
+}
+
+/*//////// LISTOR ////////*/
+
+/*Onumrerade listor.
+Justering av marginal*/
+ul {
+    margin-left: 1rem;
+    line-height: 1.5;
+}
+
+/*Numrerad lista (För hur man bokar)
+jusetring av marginal och fontsize*/
+ol {
+    margin-left: 1rem;
+    line-height: 1.5;
+}
+
+ol h2 {
+    font-size: 1rem;
+}
+
+li {
+    padding-bottom: 0.5rem;
+}
+
+.tillganglig{
+    padding-top: 2rem;
+}
+
+/*///// RUTOR MED INFORMATON //////*/
+/*Ruta där viktig information visas, ex resedetaljer*/
+.inforuta {
+    background-color: #D8E5FD;
+    border-radius: 10px;
+    padding-left: 2rem;
+    padding-right: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    padding-right: 5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+/*//// MINA RESOR-SIDA  /////*/
+
+/*Ramen runt enskilda resor*/
+.border1 {
+    border-color: #003A6C;
+    border-style: solid;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 50%;
+
+}
+
+/*Ramen runt återrkommande resor*/
+.border2 {
+    border-color: #D96D00;
+    border-style: solid;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 50%;
+    margin-top: 2rem;
+}
+
+/*///// REGLER OCH VILLKOR ////*/
+
+/*Styling av informationsfält. Klickbara*/
+details {
+    border: 1px solid #003A6C;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    background-color: rgb(248, 247, 244);
+    margin-bottom: 1rem;
+}
+
+
+/*marginaler för brödtext*/
+details p {
+    margin-top: 0.75rem;
+}
+
+/*Marginaler för listor*/
+details ul {
+    margin-top: 1.3rem;
+}
+
+/*///// FORMULÄR ////*/
+
+/*Byter ut vanlig focus markering mot en mer diskret*/
+input:focus-visible {
+    outline: 1px solid #D96D00;
+}
+
+select:focus-visible {
+    outline: 1px solid #D96D00;
+    outline-offset: 2px;
+}
+
+textarea:focus-visible {
+    outline: 1px solid #D96D00;
+    outline-offset: 2px;
+}
+
+
+/*Standars styling för formulären*/
+form {
+    background-color: #D8E5FD;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    min-width: 50%;
+}
+
+form h2{
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/*KOntaktformulär för synpunkter*/
+.contactform2{
+    max-height: 500px;
+}
+
+.contactform2 legend{
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/*Font storelk på legend*/
+form legend {
+    font-size: 1.5rem;
+}
+
+.loginform{
+    width: 35%;
+    min-width: 380px;
+}
+
+
+
+fieldset {
+    padding: 1rem;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/*Styling för inputfälten*/
+form input,
+select {
+    padding: 0.7rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+/*Styling för checkboxar*/
+input[type="checkbox"] {
+    accent-color: #D96D00;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+/*Styling för radioknapp*/
+input[type="radio"] {
+    accent-color: #D96D00;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+/*Styling för meddelandefält*/
+textarea {
+    height: 8rem;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-family: 'Inter', Segoe UI, Geneva, Verdana, sans-serif;
+}
+
+input[type="date"] {
+    padding: 0.5rem;
+    font-family: 'Inter', Segoe UI, Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    color: #333;
+    min-width: 200px;
+}
+
+
+/*Wrapper för de olika delarna i formuläter*/
+.formgroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    min-width: 100px;
+}
+
+
+/*Positionering för knappar*/
+.formbuttons {
+    display: flex;
+    min-width: 50%;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+/*Knapparna på log in formulär*/
+.formbuttonslogin {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}

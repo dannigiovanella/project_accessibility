@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--LÄnkade CSS-filer-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="mobile.css">
+    <!--LÄnkad JS-fil (För hamburgermeny i mobile)-->
+    <script src="navbar.js" defer></script>
+
+    <!--Google font. Inter-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <title>Logga in</title>
+</head>
+
+
+<body>
+    <header>
+        <!--Logotyp och navigationsmeny-->
+        <div class="headertop">
+            <img src="bilder/logo.png" alt="Logotyp" class="logotypindex">
+            <!--Sökfunktion, lyssnafunktion och språkfunktion-->
+            <div class="headertopdetail">
+                <!--Sökfunktion med knapp (Ikon och knapp)-->
+                <div class="search">
+                    <input type="search" placeholder="Vad söker du..." class="searchinput">
+                    <!--Ikon för sök-->
+                    <img src="icons/search.svg" alt="search icon">
+                </div>
+
+                <!--Sökfunktion (ikon för mobile och tablet)-->
+                <div class="search2">
+                    <img src="icons/search3.svg" alt="search icon">
+                    <p>Sök</p>
+                </div>
+
+                <!--Lyssnafunktion (ikon)-->
+                <div class="headphones">
+                    <img src="icons/headphones.svg" alt="headphones icon">
+                    <p>Lyssna</p>
+                </div>
+
+                <!--Språkfunktion (ikon)-->
+                <div class="sprak">
+                    <img src="bilder/flag.png" alt="flagga" class="flag">
+                    <p>Språk</p>
+                </div>
+
+            </div>
+        </div>
+        <!--Bannerbild-->
+        <div class="indexbanner">
+            <img class="layer1" src="bilder/indexpic.jpg" alt="Man med hänederna på ratten i en bil">
+            <div class="bannerbild">
+                <p>FÄRDTJÄNST</p>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="wrapper1">
+
+            <section class="wrapper2">
+                <!--Välkomnande och beskrivande tex av webbplats-->
+                <h1>Välkommen till färdtjänst i Sotenäs kommun</h1>
+                <p>Färdtjänst är till för dig som har svårt att resa med vanlig kollektivtrafik. Logga in för att boka,
+                    se dina bokningar eller avboka en resa. </p>
+                <p> Vill du ansöka om rätt till färdtjänst eller behöver hjälp? Besök kommunens webbsida för detta.</p>
+                <!--Knapp som tar användare till kommunsida för ansökan-->
+                <a class="bigbutton"
+                    href="https://www.sotenas.se/omsorg--stod/resor-transporter-och-besok/fardtjanst">Till ansökan och
+                    kontakt<img src="icons/forward.png" alt=""></a>
+            </section>
+
+            <div class="loginform">
+            <!--Logga in formulär-->
+            <form  autocomplete="on">
+                <fieldset>
+                    <legend>
+                        <h2>Logga in</h2>
+                    </legend>
+                    <!--Gruppering för användarnamn-->
+                    <div class="formgroup">
+                        <label for="username">Användarnamn:</label>
+                        <input type="text" id="username" name="username" placeholder="ex. Ann123" required>
+                    </div>
+                    <!--Gruppering för lösenord-->
+                    <div class="formgroup">
+                        <label for="password">Lösenord:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <!--Knapp för att logga in och en "Glömt lösen" länk-->
+                    <div class="formbuttonslogin">
+                        <a class="smallbutton" href="mypages.html">Logga in</a>
+
+                        <a href="#" class="forgotpassword">Glömt lösenord?</a>
+                    </div>
+                </fieldset>
+            </form>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!--sektion för kommunens adress-->
+        <section>
+            <h3>Sotenäs kommun</h3>
+            <p>Besöksadress:</p>
+
+            <p>Parkgatan 46<br>
+                456 80 Kungshamn</p>
+
+            <p>Webbadress:</p>
+            <a href="https://www.sotenas.se/">sotenäs.se</a>
+        </section>
+
+        <!--Sektion för kontakt-->
+        <section>
+            <h3>Kontakt</h3>
+            <a href="contact.html">Kontakta oss</a>
+            <p>Telefon: 0523-66 40 00</p>
+            <a href="mailto:info@sotenas.se">
+                Skicka e-post
+            </a>
+
+        </section>
+
+        <!--Sektion för tillgänglighet och personuppgift-säkerhet-->
+        <section>
+            <h3>Tillgänglighet och säkerhet</h3>
+            <a href="tillgängllighetsrapport.html">Tillgänglighetsredogörelse</a>
+            <a href="gdpr.html">GDPR</a>
+        </section>
+
+    </footer>
+</body>
+
+</html>

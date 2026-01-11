@@ -1,0 +1,239 @@
+/*TABLET-LÄGE*/
+@media (max-width: 1024px) {
+
+  /*Nollställer alla marginaler*/
+  body {
+    margin-left: 0;
+  }
+
+  /*Nollställer marginal i main*/
+  main {
+    margin: 0;
+  }
+
+
+  /*Styling för rubriker*/
+  h1 {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    margin-left: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  /*//// HEADER /////*/
+
+  /*Storlek och position för bannerbild "FÄRDTJÄNST"*/
+  .bannerbild {
+    width: 70%;
+    margin-bottom: 0;
+  }
+
+  /*Marginal för översta delen av header (logout + sök)*/
+  .headertop {
+    margin-bottom: 1rem;
+  }
+
+  /*///// NAVIGATIONSMENY  /////*/
+
+  /* Visa hamburgerikon */
+  .hamburger {
+    display: block;
+  }
+
+  /*Positionerinf för navigationsmeny under hamburgerikon*/
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0;
+  }
+
+  /*Styling för meny. Döljs vid laddning av sida*/
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    background-color: #ee9c4b;
+  }
+
+  /*När hamburgaren är iklickad visas menyraden*/
+  nav ul.show {
+    display: flex;
+    background-color: #ee9c4b;
+  }
+
+  /*Positionering för "dropdowns" underlänkar*/
+  nav ul li ul {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 1rem;
+  }
+
+  /*padding för underlänkarna*/
+  nav ul li ul li a {
+    padding: 0.75rem 1rem;
+  }
+
+  /*Hover för underlänkar*/
+  nav ul li ul li a:hover {
+    color: antiquewhite;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+  }
+
+
+
+  /*Ersatt bakgrundsfärg till annan textfärg vid hover av länkar i meny */
+  nav ul li a:hover {
+    background-color: transparent;
+    color: rgb(250, 250, 248);
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+  }
+
+  /* Tar bort bakgrundsfärg för underlänkarna*/
+  nav ul li:hover ul {
+    background-color: transparent;
+  }
+
+  /*Storlek för logga ut-knapp i under hamburgaren*/
+  .logout {
+    width: 100%;
+    margin-top: 0.5rem;
+    display: none;
+  }
+
+  /*Visar även logga ut-knappen vid klick av hamburdermeny*/
+  nav ul.show+.logout {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*// SLUT PÅ NAV ///*/
+
+  /*/// FOOTER ///*/
+  /*Positionering av innehåll i footer*/
+  footer {
+    flex-direction: column;
+    gap: 3rem;
+    padding-left: 2rem;
+  }
+
+  footer section {
+    margin-left: 2rem;
+  }
+
+
+  /*BRADCRUMBS*/
+  /*Vänstermarginal för position av brödsmulor*/
+  .breadcrumbs ol {
+    margin-left: 1rem;
+  }
+
+  /*//////// WRAPPERS OCH POSITIONERING ////////////*/
+
+  /*Wrapper för alla sidor utan bilder (Hela sidan)*/
+  .wrapper1 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  /*Wrapper för sektioner*/
+  .wrapper2 {
+    width: 100%;
+  }
+
+  .wrapper2 h1 {
+    margin-left: 0;
+  }
+
+  /*Wrapper för sidor med stora bilder (hela sidan)*/
+  .wrapper3 {
+    margin-left: 3rem;
+    margin-right: 2rem;
+    flex-direction: column;
+    gap: 1.5rem;
+
+  }
+
+  /*//// BILDER /////*/
+
+  /*Döljer bilden för desktop*/
+  .sideimage {
+    display: none;
+  }
+
+  /*Visar bilde som banner i tablet och mobile*/
+  .sideimagemobile {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+  }
+
+  /*///// RUTOR MED INFORMATON //////*/
+  /*Ruta där viktig information visas, ex resedetaljer*/
+  .inforuta {
+    background-color: #D8E5FD;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+  }
+
+  /*Padding för texten i inforutor*/
+  .inforuta p {
+    padding-bottom: 0.5rem;
+  }
+
+  /*Kant runt mina bokade resor */
+  .border1 {
+    width: 70%;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+  }
+
+  /*kant runt mina återkommande resor*/
+  .border2 {
+    width: 70%;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+  }
+
+  /*/// KNAPAR  ////*/
+
+  .buttonwrapper {
+    justify-content: center;
+  }
+
+  /*//// Formulär  /////*/
+  /*Bredd för formulär*/
+  form {
+    width: 80%;
+    padding: 1rem;
+  }
+
+
+  .loginform{
+    width: 90%;
+}
+
+
+}

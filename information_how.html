@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--LÄnkade CSS-filer-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="mobile.css">
+    <!--LÄnkad JS-fil (För hamburgermeny i mobile)-->
+    <script src="navbar.js" defer></script>
+
+    <!--Google font. Inter-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <title>Regler och villkor</title>
+</head>
+
+<body>
+    <!-- Header med logotyp, sökfunktion och navigationsmeny-->
+    <header>
+
+        <!--Top på header med logotyp, sökfunktion, lyssna och språk-->
+        <div class="headertop">
+
+            <!--Logotyp med länk till index-->
+            <a href="index.html">
+                <img src="bilder/logo.png" alt="Logotyp" class="logotyp">
+            </a>
+
+            <!--Sökfunktion, lyssnafunktion och språkfunktion-->
+            <div class="headertopdetail">
+                <!--Sökfunktion med knapp (Ikon och knapp)-->
+                <div class="search">
+                    <input type="search" placeholder="Vad söker du..." class="searchinput">
+                    <!--Ikon för sök-->
+                    <img src="icons/search.svg" alt="">
+                </div>
+
+                <!--Sökfunktion (ikon för mobile och tablet)-->
+                <div class="search2">
+                    <img src="icons/search3.svg" alt="">
+                    <p>Sök</p>
+                </div>
+
+                <!--Lyssnafunktion (ikon)-->
+                <div class="headphones">
+                    <img src="icons/headphones.svg" alt="">
+                    <p>Lyssna</p>
+                </div>
+
+                <!--Språkfunktion (ikon)-->
+                <div class="sprak">
+                    <img src="bilder/flag.png" alt="" class="flag">
+                    <p>Språk</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!--Hamburger-ikon till meny i mobile. HTML-ikon för lättare stylng-->
+        <button class="hamburger">&#9776;</button>
+        <!--Bannerbild-->
+        <div class="bannerbild">
+            <p>FÄRDTJÄNST</p>
+        </div>
+
+        <!--Navigationsmeny. Huvudmeny för webbplats-->
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="mypages.html">MINA SIDOR</a>
+                        <ul>
+                            <li><a href="booking_firstpage.html">Boka resa</a></li>
+                            <li><a href="mytravel.html">Mina resor</a></li>
+                            <li><a href="mydetails.html">Mina uppgifter</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="booking_firstpage.html">BOKA</a>
+                        <ul>
+                            <li><a href="booking_solotravel.html">Enskild resa</a></li>
+                            <li><a href="booking_continuoustravel.html">Återkommande resor</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="information.html">INFORMATION</a>
+                        <ul>
+                            <li><a href="information_how.html" class="active">Regler och villkor</a></li>
+                            <li><a href="information_about.html">Hur du bokar</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">KONTAKT</a></li>
+
+                </ul>
+                <!--Knapp för att logga ut. Länkad till index-->
+                <a class="logout" href="index.html"><img src="icons/logout.png" alt="">Logga ut</a>
+            </nav>
+        </div>
+
+    </header>
+                <!--Breadcrumbs för att veta vart man är-->
+<nav class="breadcrumbs">
+<ol>
+    <li><a href="information.html">Information/</a></li>
+    <li class="currentpage">Regler och villkor</li>
+</ol>
+</nav>
+    <main>
+        <div class="wrapper1">
+            <section class="wrapper2">
+                <h1>Regler och villkor</h1>
+
+                <details>
+                    <summary>När kan jag boka?</summary>
+                    <p>Du kan boka din resa fram till två timmar innan önskad färd. Vi rekommenderar dock att boka så
+                        tidigt
+                        som möjligt för att garantera tillgänglighet och punktlighet.</p>
+                </details>
+
+                <details>
+                    <summary>Resa med hjälpmedel
+                    </summary>
+                    <p>Om du reser med något hjälpmedel behöver du fylla i detta vid bokning. Vår chaufför hjälper dig
+                        och
+                        ditt hjälpmedel av och på fordonet med d samt att säkerställa säkerheten för dig</p>
+                </details>
+
+                <details>
+                    <summary>Resa med ledsagare</summary>
+                    <p>Är du behov av och reser med ledsagare behöver du fylla i detta vid ansökning för att få
+                        ledsagare
+                        godkänd för färdjänst. Du behöver även fylla i vid bokning om du resermed en ledsagare.</p>
+                    <p>Reser du med en ledsagare utan ett godkännande vid ansökan tar vi ut en reseavgift för denna
+                        person.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Vad kostar resan</summary>
+                    <p>Resekostnaden är baserad på avstånd och kostar 3,24 kronor per kilometer.</p>
+                </details>
+
+                <details>
+                    <summary>Vart kan jag åka</summary>
+                    <p>Du kan åka överallt inom Västra götelands regionen, och resor kan göras dygnet runt.</p>
+                </details>
+
+                <details>
+                    <summary>Avbokningsregler och ändring
+                    </summary>
+                    <ul>
+                        <li>Avbokning bör ske så snart du vet att du inte ska resa, men inte senare än en timme innan
+                            avresetid. Detta gäller även för eventuella ändringar i din resa.</li>
+                        <li>Under helger och högtider gäller tre timmar innan avresa.</li>
+                        <li>Vid akuta ändringar kan du alltid nå oss via telefon.</li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>Om du inte dyker upp</summary>
+                    <p>Om du uteblir från avsedd tid på och inte är på plats vid upphämtningsadressen och inte har
+                        avbokat,
+                        kan resan registreras som en inställd resa. Vår chaufför ringer dock alltid om du inte är på
+                        plats.
+                    </p>
+                    <p>Upprepade inställa resor av detta slag kan leda till extra avgifter eller begränsningar att kunna
+                        boka i framtiden. </p>
+                </details>
+
+                <details>
+                    <summary>Om du upplever problem</summary>
+                    <p>Skulle du uppleva förseningar eller andra problem, kontakta oss gärna direkt på telefon. Har du
+                        synpunker kan du även skicka oss ett meddelande via vårt kontaktformulär.</p>
+                </details>
+
+
+                <a class="bigbutton" href="contact.html"><img src="icons/contact.png" alt="">Kontakta oss</a>
+
+            </section>
+
+            <section class="wrapper2">
+                <div class="inforuta">
+                    <h2>Vad säger lagen?</h2>
+                    <p>Färdtjänstlagen finns för att säkerställa att personer som har svårt att resa med vanlig
+                        kollektivtrafik ändå kan delta i samhällslivet.</p>
+                    <p> Lagen ska ge rätt till resor som behövs för tex. vardag, arbete, utbildning. Lagen ska skapa
+                        trygghet och självständighet för personer med funktionsnedsättning eller andra varaktiga
+                        begränsningar.</p>
+                    <p>Vill du läsa mer om lagen i detalj hittar du lagen vi länken nedan.</p>
+
+                    <div class="buttonwrapper">
+                    <a class="smallbutton"
+                        href="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-1997736-om-fardtjanst_sfs-1997-736/"
+                        target="_blank" rel="noopener noreferrer">Till lagen om färdtjänst<img src="icons/forward.png" alt=""> </a>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+    </main>
+
+    <footer>
+        <!--sektion för kommunens adress-->
+        <section>
+            <h3>Sotenäs kommun</h3>
+            <p>Besöksadress:</p>
+
+            <p>Parkgatan 46<br>
+                456 80 Kungshamn</p>
+
+            <p>Webbadress:</p>
+            <a href="https://www.sotenas.se/">sotenäs.se</a>
+        </section>
+
+        <!--Sektion för kontakt-->
+        <section>
+            <h3>Kontakt</h3>
+            <a href="contact.html">Kontakta oss</a>
+            <p>Telefon: 0523-66 40 00</p>
+            <a href="mailto:info@sotenas.se">
+                Skicka e-post
+            </a>
+
+        </section>
+
+        <!--Sektion för tillgänglighet och personuppgift-säkerhet-->
+        <section>
+            <h3>Tillgänglighet och säkerhet</h3>
+            <a href="tillgängllighetsrapport.html">Tillgänglighetsredogörelse</a>
+            <a href="gdpr.html">GDPR</a>
+        </section>
+
+    </footer>
+</body>
+
+</html>

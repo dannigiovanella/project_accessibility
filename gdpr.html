@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--LÄnkade CSS-filer-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="mobile.css">
+    <!--LÄnkad JS-fil (För hamburgermeny i mobile)-->
+    <script src="navbar.js" defer></script>
+
+    <!--Google font. Inter-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <title>GDPR</title>
+</head>
+
+<body>
+    <!-- Header med logotyp, sökfunktion och navigationsmeny-->
+    <header>
+
+        <!--Top på header med logotyp, sökfunktion, lyssna och språk-->
+        <div class="headertop">
+
+            <!--Logotyp med länk till index-->
+            <a href="index.html">
+                <img src="bilder/logo.png" alt="Logotyp" class="logotyp">
+            </a>
+
+            <!--Sökfunktion, lyssnafunktion och språkfunktion-->
+            <div class="headertopdetail">
+                <!--Sökfunktion med knapp (Ikon och knapp)-->
+                <div class="search">
+                    <input type="search" placeholder="Vad söker du..." class="searchinput">
+                        <!--Ikon för sök-->
+                        <img src="icons/search.svg" alt="search icon">
+                </div>
+
+                <!--Sökfunktion (ikon för mobile och tablet)-->
+                <div class="search2">
+                    <img src="icons/search3.svg" alt="search icon">
+                    <p>Sök</p>
+                </div>
+
+                <!--Lyssnafunktion (ikon)-->
+                <div class="headphones">
+                    <img src="icons/headphones.svg" alt="headphones icon">
+                    <p>Lyssna</p>
+                </div>
+
+                <!--Språkfunktion (ikon)-->
+                <div class="sprak">
+                    <img src="bilder/flag.png" alt="flagga" class="flag">
+                    <p>Språk</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!--Hamburger-ikon till meny i mobile. HTML-ikon för lättare stylng-->
+        <button class="hamburger">&#9776;</button>
+        <!--Bannerbild-->
+        <div class="bannerbild">
+            <p>FÄRDTJÄNST</p>
+        </div>
+
+        <!--Navigationsmeny. Huvudmeny för webbplats-->
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="mypages.html">MINA SIDOR</a>
+                        <ul>
+                            <li><a href="booking_firstpage.html">Boka resa</a></li>
+                            <li><a href="mytravel.html">Mina resor</a></li>
+                            <li><a href="mydetails.html">Mina uppgifter</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="booking_firstpage.html">BOKA</a>
+                        <ul>
+                            <li><a href="booking_solotravel.html">Enskild resa</a></li>
+                            <li><a href="booking_continuoustravel.html">Återkommande resor</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="information.html">INFORMATION</a>
+                        <ul>
+                            <li><a href="information_how.html">Regler och villkor</a></li>
+                            <li><a href="information_about.html">Hur du bokar</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">KONTAKT</a></li>
+
+                </ul>
+                <!--Knapp för att logga ut. Länkad till index-->
+                <a class="logout" href="index.html"><img src="icons/logout.png" alt="">Logga ut</a>
+            </nav>
+        </div>
+
+    </header>
+
+  
+<!--Breadcrumbs för att veta vart man är-->
+<nav class="breadcrumbs">
+  <ol>
+    <li class="currentpage">GDPR</li>
+  </ol>
+</nav>
+
+
+<main class="wrapper1">
+  <div class="wrapper2">
+  <h1>GDPR</h1>
+  <section>
+    <h2>Hur behandlar vi dina personuppgifter</h2>
+    <p>Vi arbetar efter dataskyddsförordningen (GDPR), vilket inebär att dina personuppgifter används endast för avsedda ändamål.</p>
+    <p>Har du frågor kring hur vi behandlar dina personuppgifter är du välkommen att höra av dig till oss. <a href="contact.html">Kontakta oss</a></p>
+    <p>Du kan även läsa mer om GDPR på Integritetsskydds myndigheten:</p>
+    <a class="bigbutton" href="https://www.imy.se/verksamhet/dataskydd/det-har-galler-enligt-gdpr/">GDPR - Detta gäller</a>
+  </section>
+  </div>
+</main>
+
+
+    <footer>
+        <!--sektion för kommunens adress-->
+        <section>
+            <h3>Sotenäs kommun</h3>
+            <p>Besöksadress:</p>
+
+            <p>Parkgatan 46<br>
+                456 80 Kungshamn</p>
+
+            <p>Webbadress:</p>
+            <a href="https://www.sotenas.se/">sotenäs.se</a>
+        </section>
+
+        <!--Sektion för kontakt-->
+        <section>
+            <h3>Kontakt</h3>
+            <a href="contact.html">Kontakta oss</a>
+            <p>Telefon: 0523-66 40 00</p>
+            <a href="mailto:info@sotenas.se">
+                Skicka e-post
+            </a>
+
+        </section>
+
+        <!--Sektion för tillgänglighet och personuppgift-säkerhet-->
+        <section>
+            <h3>Tillgänglighet och säkerhet</h3>
+            <a href="tillgängllighetsrapport.html">Tillgänglighetsredogörelse</a>
+            <a href="gdpr.html">GDPR</a>
+        </section>
+
+    </footer>
+</body>
+
+</html>
