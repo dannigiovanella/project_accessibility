@@ -316,7 +316,7 @@ nav ul li a {
 }
 
 /*Hur menyrader ser ut när man hovrar över länkarna*/
-nav ul li a:hover {
+nav ul li:hover > a {
     background-color: #D96D00;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
