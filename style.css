@@ -80,7 +80,7 @@ footer section {
 /*Syling och hover för länkar i footer*/
 footer a {
     color: rgb(248, 247, 244);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 /*Hhover över länkar i footer*/
