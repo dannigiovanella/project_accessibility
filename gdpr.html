@@ -39,8 +39,8 @@
                 <!--Sökfunktion med knapp (Ikon och knapp)-->
                 <div class="search">
                     <input type="search" placeholder="Vad söker du..." class="searchinput">
-                        <!--Ikon för sök-->
-                        <img src="icons/search.svg" alt="">
+                    <!--Ikon för sök-->
+                    <img src="icons/search.svg" alt="">
                 </div>
 
                 <!--Sökfunktion (ikon för mobile och tablet)-->
@@ -65,7 +65,7 @@
         </div>
 
         <!--Hamburger-ikon till meny i mobile. HTML-ikon för lättare stylng-->
-        <button class="hamburger">&#9776;</button>
+        <button aria-label="Meny" class="hamburger">&#9776;</button>
         <!--Bannerbild-->
         <div class="bannerbild">
             <p>FÄRDTJÄNST</p>
@@ -104,27 +104,33 @@
 
     </header>
 
-  
-<!--Breadcrumbs för att veta vart man är-->
-<nav class="breadcrumbs">
-  <ol>
-    <li class="currentpage">GDPR</li>
-  </ol>
-</nav>
+
+    <!--Breadcrumbs för att veta vart man är-->
+    <nav class="breadcrumbs">
+        <ol>
+            <li class="currentpage">GDPR</li>
+        </ol>
+    </nav>
 
 
-<main class="wrapper1">
-  <div class="wrapper2">
-  <h1>GDPR</h1>
-  <section>
-    <h2>Hur behandlar vi dina personuppgifter</h2>
-    <p>Vi arbetar efter dataskyddsförordningen (GDPR), vilket inebär att dina personuppgifter används endast för avsedda ändamål.</p>
-    <p>Har du frågor kring hur vi behandlar dina personuppgifter är du välkommen att höra av dig till oss. <a href="contact.html">Kontakta oss</a></p>
-    <p>Du kan även läsa mer om GDPR på Integritetsskydds myndigheten:</p>
-    <a class="bigbutton" href="https://www.imy.se/verksamhet/dataskydd/det-har-galler-enligt-gdpr/">GDPR - Detta gäller</a>
-  </section>
-  </div>
-</main>
+    <main class="wrapper1">
+        <div class="wrapper2">
+            <!--Information om GDPR och personsekretess-->
+            <h1>GDPR</h1>
+            <section>
+                <h2>Hur behandlar vi dina personuppgifter</h2>
+                <p>Vi arbetar efter dataskyddsförordningen (GDPR), vilket inebär att dina personuppgifter används endast
+                    för avsedda ändamål.</p>
+                <p>Har du frågor kring hur vi behandlar dina personuppgifter är du välkommen att höra av dig till oss.
+                    <a href="contact.html">Kontakta oss</a>
+                </p>
+                <p>Du kan även läsa mer om GDPR på Integritetsskydds myndigheten:</p>
+                <!--Länk till info om gdpr-->
+                <a class="bigbutton" href="https://www.imy.se/verksamhet/dataskydd/det-har-galler-enligt-gdpr/">GDPR -
+                    Detta gäller</a>
+            </section>
+        </div>
+    </main>
 
 
     <footer>

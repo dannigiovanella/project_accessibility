@@ -316,7 +316,7 @@ nav ul li a {
 }
 
 /*Hur menyrader ser ut när man hovrar över länkarna*/
-nav ul li:hover > a {
+nav ul li:hover>a {
     background-color: #D96D00;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -535,7 +535,7 @@ li {
     padding-bottom: 0.5rem;
 }
 
-.tillganglig{
+.tillganglig {
     padding-top: 2rem;
 }
 
@@ -626,18 +626,18 @@ form {
     min-width: 300px;
 }
 
-form h2{
+form h2 {
     font-size: 1.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
 /*KOntaktformulär för synpunkter*/
-.contactform2{
+.contactform2 {
     max-height: 520px;
 }
 
-.contactform2 legend{
+.contactform2 legend {
     font-size: 1.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -648,7 +648,7 @@ form legend {
     font-size: 1.5rem;
 }
 
-.loginform{
+.loginform {
     width: 100%;
     max-width: 500px;
 }

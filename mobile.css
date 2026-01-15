@@ -200,15 +200,15 @@
     padding: 1rem;
   }
 
-  .loginform{
-min-width: 50px;
+  .loginform {
+    min-width: 50px;
     width: 100%;
-    
-}
 
-  .contactform2{
+  }
+
+  .contactform2 {
     max-height: 550px;
-}
+  }
 
   /*Bredd för knappar i formulär*/
   .formgroup {

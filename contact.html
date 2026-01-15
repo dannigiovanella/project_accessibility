@@ -65,7 +65,7 @@
         </div>
 
         <!--Hamburger-ikon till meny i mobile. HTML-ikon för lättare stylng-->
-        <button class="hamburger">&#9776;</button>
+        <button aria-label="Meny" class="hamburger">&#9776;</button>
         <!--Bannerbild-->
         <div class="bannerbild">
             <p>FÄRDTJÄNST</p>
@@ -114,11 +114,13 @@
     <main>
         <div class="wrapper1">
             <section class="wrapper2">
+                <!--Information om kontakt-->
                 <h1>Kontakt</h1>
                 <p>Har du frågor eller behöver hjälp med färdtjänst?
                     Du kan kontakta oss via kontaktformuläret på webbplatsen eller genom att ringa eller mejla oss. Vi
                     hjälper dig gärna med bokning, avbokning och andra frågor.</p>
 
+                <!--Kontaktuppgifter-->
                 <h2>Kontaktuppgifter</h2>
                 <p><strong>Telefon:</strong> 0523-123 45</p>
                 <p><strong>E-post:</strong> fardtjanst@sotenas.se</p>
@@ -128,39 +130,39 @@
                 <p><strong>Akutnummer:</strong> 0523-987 65</p>
 
             </section>
-
+            <!--Kontaktformulär. Autocomplete och required för alla fält-->
             <form class="contactform" autocomplete="on">
                 <fieldset>
                     <legend>
                         <h2>Kontakta oss</h2>
                     </legend>
-
+                    <!--Namn-->
                     <div class="formgroup">
                         <label for="name">Namn</label>
                         <input type="text" id="name" name="name" placeholder="För och efternamn" required>
                     </div>
-
+                    <!--Ämne-->
                     <div class="formgroup">
                         <label for="subject">Ämne</label>
                         <input type="text" id="subject" name="subject" placeholder="Vad gäller ditt ärende?">
                     </div>
-
+                    <!--E-mail-->
                     <div class="formgroup">
                         <label for="email">E-post</label>
                         <input type="email" id="email" name="email" placeholder="exempel@epost.se" required>
                     </div>
-
+                    <!--Telefonnummer-->
                     <div class="formgroup">
                         <label for="phone">Telefonnummer</label>
                         <input type="tel" id="phone" name="phone" placeholder="070-123 45 67" required>
                     </div>
-
+                    <!--Meddelandefält-->
                     <div class="formgroup">
                         <label for="message">Meddelande</label>
                         <textarea id="message" name="message" placeholder="Skriv ditt meddelande här..."
                             required></textarea>
                     </div>
-
+                    <!--Knapp för att skicka-->
                     <div class="formbuttons">
                         <button type="submit" class="smallbutton"><img src="icons/send.png" alt=""> Skicka</button>
                     </div>
